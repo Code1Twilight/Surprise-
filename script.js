@@ -76,7 +76,7 @@ function updateFireworks() {
           color: f.color,
           letter: f.letter,
           alpha: 0,
-          size: 44
+          size: 70
         });
         fireworks.splice(i, 1);
       }
