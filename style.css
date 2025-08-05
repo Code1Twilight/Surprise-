@@ -1,0 +1,67 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffe6f0;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+#start {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px 60px;
+  background-color: #fff;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  cursor: pointer;
+  z-index: 2;
+}
+
+#start h1 {
+  color: #ff69b4;
+  font-size: 24px;
+}
+
+canvas {
+  display: block;
+}
+
+#photo {
+  position: absolute;
+  bottom: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 5px solid white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  display: none;
+  z-index: 3;
+}
+
+.balloon {
+  position: absolute;
+  width: 30px;
+  height: 40px;
+  background-color: pink;
+  border-radius: 50% 50% 50% 50%;
+  animation: floatUp 6s linear infinite;
+}
+
+@keyframes floatUp {
+  0% {
+    bottom: -50px;
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    bottom: 110%;
+    opacity: 0;
+  }
+}
